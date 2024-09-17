@@ -5,6 +5,7 @@ variable "destination_org" {
 
 variable "gh_token" {
   description = "Github token with permissions to create and delete repos."
+  default = ""
 }
 
 variable "waypoint_application" {
@@ -29,4 +30,5 @@ variable "aws_region" {
 
 variable "route53_zone_id" {
   description = "The premade route53 zone ID. The zone is created outside of here so that the domain config can be set up beforehand."
+  default = ""
 }
